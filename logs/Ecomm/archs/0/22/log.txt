@@ -1,0 +1,38 @@
+Ecomm Dataset(T=10,metadata=(['user', 'item'], [('user', 'click', 'item'), ('user', 'buy', 'item'), ('user', 'cart', 'item'), ('user', 'favorite', 'item'), ('item', 'rev_click', 'user'), ('item', 'rev_buy', 'user'), ('item', 'rev_cart', 'user'), ('item', 'rev_favorite', 'user')]),dataset=HeteroData(
+  [1muser[0m={ x=[1476] },
+  [1mitem[0m={ x=[34505] },
+  [1m(user, click, item)[0m={
+    edge_index=[2, 57917],
+    edge_time=[57917, 1]
+  },
+  [1m(user, buy, item)[0m={
+    edge_index=[2, 5529],
+    edge_time=[5529, 1]
+  },
+  [1m(user, cart, item)[0m={
+    edge_index=[2, 15066],
+    edge_time=[15066, 1]
+  },
+  [1m(user, favorite, item)[0m={
+    edge_index=[2, 6701],
+    edge_time=[6701, 1]
+  },
+  [1m(item, rev_click, user)[0m={
+    edge_index=[2, 57917],
+    edge_time=[57917, 1]
+  },
+  [1m(item, rev_buy, user)[0m={
+    edge_index=[2, 5529],
+    edge_time=[5529, 1]
+  },
+  [1m(item, rev_cart, user)[0m={
+    edge_index=[2, 15066],
+    edge_time=[15066, 1]
+  },
+  [1m(item, rev_favorite, user)[0m={
+    edge_index=[2, 6701],
+    edge_time=[6701, 1]
+  }
+),
+            )
+Final Test: 0.8860

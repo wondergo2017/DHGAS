@@ -1,3 +1,0 @@
-# DHGAS
-
-Coming Soon

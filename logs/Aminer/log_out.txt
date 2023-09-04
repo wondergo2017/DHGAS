@@ -1,0 +1,329 @@
+CrossDomain Dataset(T=16,metadata=(['paper', 'author', 'venue'], [('paper', 'published', 'venue'), ('paper', 'written', 'author'), ('venue', 'rev_published', 'paper'), ('author', 'rev_written', 'paper')]),dataset=HeteroData(
+  [1mpaper[0m={
+    x=[18464, 32],
+    y=[18464],
+    time=[18464, 1],
+    num_nodes=18464
+  },
+  [1mauthor[0m={ x=[23035] },
+  [1mvenue[0m={ x=[22] },
+  [1m(paper, published, venue)[0m={
+    edge_index=[2, 18464],
+    edge_time=[18464, 1]
+  },
+  [1m(paper, written, author)[0m={
+    edge_index=[2, 52545],
+    edge_time=[52545, 1]
+  },
+  [1m(venue, rev_published, paper)[0m={
+    edge_index=[2, 18464],
+    edge_time=[18464, 1]
+  },
+  [1m(author, rev_written, paper)[0m={
+    edge_index=[2, 52545],
+    edge_time=[52545, 1]
+  }
+),
+            )
+reset,patience,n_warmup:(0, 10, 30)
+########## stage 0 ####################################################################################################
+########## stage 0 ####################################################################################################
+# space layers : 2 
+########## Searching space 0 ########## 
+########## stage 1 ####################################################################################################
+best val auc : 0.5393412946892885 , saving at epoch 0
+best val auc : 0.612906197163567 , saving at epoch 1
+best val auc : 0.6382647515320898 , saving at epoch 2
+best val auc : 0.6517441023206695 , saving at epoch 3
+best val auc : 0.6675568166665777 , saving at epoch 4
+best val auc : 0.6940544778627012 , saving at epoch 5
+best val auc : 0.7140553845825622 , saving at epoch 6
+best val auc : 0.7255653398332703 , saving at epoch 7
+best val auc : 0.734155123767261 , saving at epoch 8
+best val auc : 0.7432443503352195 , saving at epoch 9
+best val auc : 0.7472574924395564 , saving at epoch 10
+best val auc : 0.7573753126850109 , saving at epoch 11
+best val auc : 0.7747059827509881 , saving at epoch 12
+best val auc : 0.7862392460357674 , saving at epoch 13
+best val auc : 0.7964086959768306 , saving at epoch 14
+best val auc : 0.8036237859287745 , saving at epoch 15
+best val auc : 0.8077377872835205 , saving at epoch 16
+best val auc : 0.8110429945223453 , saving at epoch 17
+best val auc : 0.8147803337795817 , saving at epoch 18
+best val auc : 0.8169917168473885 , saving at epoch 19
+best val auc : 0.8214913941617908 , saving at epoch 20
+best val auc : 0.8265390502909504 , saving at epoch 21
+best val auc : 0.83037799550907 , saving at epoch 22
+best val auc : 0.8330297777469611 , saving at epoch 23
+best val auc : 0.8380693800702974 , saving at epoch 24
+best val auc : 0.8405330446052836 , saving at epoch 25
+best val auc : 0.8422685064190434 , saving at epoch 27
+best val auc : 0.8442820645477869 , saving at epoch 29
+loading best val checkpoint
+########## stage 2 ####################################################################################################
+best val auc : 0.8235502882835793 , saving at epoch 0
+best val auc : 0.8444307666049741 , saving at epoch 1
+best val auc : 0.852284507357765 , saving at epoch 3
+best val auc : 0.8531647189968478 , saving at epoch 4
+best val auc : 0.8566007072414915 , saving at epoch 5
+best val auc : 0.8601679031836535 , saving at epoch 6
+best val auc : 0.8615272896009899 , saving at epoch 7
+best val auc : 0.8653651680898614 , saving at epoch 9
+best val auc : 0.867034012662076 , saving at epoch 10
+loading best val checkpoint
+########## stage 3 ####################################################################################################
+best val auc : 0.8189711396401923 , saving at epoch 0
+best val auc : 0.8421917019131789 , saving at epoch 1
+best val auc : 0.8432290961069715 , saving at epoch 2
+best val auc : 0.8504456794798629 , saving at epoch 3
+best val auc : 0.8529355855543523 , saving at epoch 4
+best val auc : 0.8553402599619178 , saving at epoch 5
+best val auc : 0.8553525806847334 , saving at epoch 6
+best val auc : 0.8563069300065603 , saving at epoch 10
+best val auc : 0.8568794969304866 , saving at epoch 13
+best val auc : 0.857289227634688 , saving at epoch 14
+best val auc : 0.8579089973278433 , saving at epoch 15
+best val auc : 0.8580234573761659 , saving at epoch 16
+best val auc : 0.8597310242200876 , saving at epoch 19
+best val auc : 0.8606601453951965 , saving at epoch 20
+best val auc : 0.8618851239272702 , saving at epoch 28
+loading best val checkpoint
+########## stage 4 ####################################################################################################
+'Time 0 attn:'
+[[0.2598, 0, 2], [0.2499, 0, 1], [0.2499, 0, 0], [0.2404, 0, 3]]
+'Time 1 attn:'
+[[0.1313, 1, 2],
+ [0.125, 0, 2],
+ [0.125, 0, 1],
+ [0.125, 1, 0],
+ [0.1249, 0, 0],
+ [0.1249, 1, 1],
+ [0.1249, 0, 3],
+ [0.119, 1, 3]]
+'Time 2 attn:'
+[[0.0864, 2, 2],
+ [0.0834, 1, 2],
+ [0.0834, 1, 3],
+ [0.0834, 2, 0],
+ [0.0833, 2, 1],
+ [0.0833, 0, 2],
+ [0.0833, 0, 0],
+ [0.0833, 0, 1],
+ [0.0833, 0, 3],
+ [0.0833, 1, 1],
+ [0.0833, 1, 0],
+ [0.0803, 2, 3]]
+'Time 3 attn:'
+[[0.0653, 3, 2],
+ [0.0625, 1, 3],
+ [0.0625, 2, 0],
+ [0.0625, 1, 2],
+ [0.0625, 0, 1],
+ [0.0625, 0, 2],
+ [0.0625, 2, 2],
+ [0.0625, 1, 0],
+ [0.0625, 1, 1],
+ [0.0625, 0, 0],
+ [0.0625, 3, 0],
+ [0.0625, 3, 1],
+ [0.0625, 0, 3],
+ [0.0625, 2, 3],
+ [0.0625, 2, 1],
+ [0.0598, 3, 3]]
+'Time 4 attn:'
+[[0.0501, 4, 2],
+ [0.05, 0, 2],
+ [0.05, 3, 2],
+ [0.05, 1, 1],
+ [0.05, 3, 0],
+ [0.05, 2, 3],
+ [0.05, 4, 1],
+ [0.05, 0, 0],
+ [0.05, 2, 0],
+ [0.05, 2, 1],
+ [0.05, 1, 0],
+ [0.05, 4, 0],
+ [0.05, 0, 3],
+ [0.05, 2, 2],
+ [0.05, 3, 1],
+ [0.05, 0, 1],
+ [0.05, 1, 3],
+ [0.05, 1, 2],
+ [0.05, 3, 3],
+ [0.05, 4, 3]]
+'Time 5 attn:'
+[[0.0428, 5, 2],
+ [0.0417, 0, 2],
+ [0.0417, 0, 1],
+ [0.0417, 3, 0],
+ [0.0417, 3, 2],
+ [0.0417, 1, 1],
+ [0.0417, 2, 2],
+ [0.0417, 0, 0],
+ [0.0417, 4, 2],
+ [0.0417, 4, 1],
+ [0.0417, 2, 1],
+ [0.0417, 5, 0],
+ [0.0417, 4, 3],
+ [0.0417, 5, 1],
+ [0.0417, 1, 0],
+ [0.0417, 2, 0],
+ [0.0417, 1, 3],
+ [0.0417, 0, 3],
+ [0.0417, 3, 3],
+ [0.0417, 4, 0],
+ [0.0417, 1, 2],
+ [0.0417, 3, 1],
+ [0.0417, 2, 3],
+ [0.0405, 5, 3]]
+'Time 6 attn:'
+[[0.0366, 6, 2],
+ [0.0357, 4, 1],
+ [0.0357, 4, 0],
+ [0.0357, 0, 3],
+ [0.0357, 5, 2],
+ [0.0357, 2, 1],
+ [0.0357, 2, 0],
+ [0.0357, 1, 2],
+ [0.0357, 3, 2],
+ [0.0357, 3, 1],
+ [0.0357, 2, 2],
+ [0.0357, 6, 1],
+ [0.0357, 5, 3],
+ [0.0357, 1, 3],
+ [0.0357, 2, 3],
+ [0.0357, 5, 0],
+ [0.0357, 6, 0],
+ [0.0357, 4, 2],
+ [0.0357, 0, 2],
+ [0.0357, 5, 1],
+ [0.0357, 3, 0],
+ [0.0357, 4, 3],
+ [0.0357, 0, 0],
+ [0.0357, 1, 0],
+ [0.0357, 3, 3],
+ [0.0357, 1, 1],
+ [0.0357, 0, 1],
+ [0.0349, 6, 3]]
+'Time 7 attn:'
+[[0.0329, 6, 1],
+ [0.0324, 2, 1],
+ [0.0324, 1, 1],
+ [0.0319, 7, 2],
+ [0.0316, 7, 1],
+ [0.0313, 5, 1],
+ [0.0312, 5, 0],
+ [0.0312, 2, 0],
+ [0.0312, 6, 3],
+ [0.0312, 2, 2],
+ [0.0312, 1, 2],
+ [0.0312, 1, 3],
+ [0.0312, 0, 3],
+ [0.0312, 3, 0],
+ [0.0312, 0, 0],
+ [0.0312, 7, 0],
+ [0.0312, 6, 2],
+ [0.0312, 4, 0],
+ [0.0312, 1, 0],
+ [0.0312, 2, 3],
+ [0.0312, 0, 2],
+ [0.0312, 4, 2],
+ [0.0312, 3, 3],
+ [0.0312, 3, 2],
+ [0.0312, 6, 0],
+ [0.0312, 5, 3],
+ [0.0312, 5, 2],
+ [0.0312, 4, 3],
+ [0.0312, 0, 1],
+ [0.0304, 7, 3],
+ [0.0299, 3, 1],
+ [0.0297, 4, 1]]
+########## Searching space 1 ########## 
+########## stage 1 ####################################################################################################
+best val auc : 0.82166740448773 , saving at epoch 0
+best val auc : 0.8372654395724549 , saving at epoch 1
+best val auc : 0.8564741398162026 , saving at epoch 2
+best val auc : 0.868963885881305 , saving at epoch 3
+best val auc : 0.8691793118529619 , saving at epoch 4
+best val auc : 0.8698791929126509 , saving at epoch 5
+best val auc : 0.8699341294689289 , saving at epoch 8
+best val auc : 0.8718717898116689 , saving at epoch 10
+best val auc : 0.8725682040013014 , saving at epoch 12
+loading best val checkpoint
+########## stage 2 ####################################################################################################
+best val auc : 0.8594634351881977 , saving at epoch 0
+best val auc : 0.8666738848679123 , saving at epoch 2
+best val auc : 0.8696990223426441 , saving at epoch 3
+best val auc : 0.8697061694286066 , saving at epoch 7
+best val auc : 0.8706201430483922 , saving at epoch 8
+best val auc : 0.8717940785859437 , saving at epoch 11
+loading best val checkpoint
+########## stage 3 ####################################################################################################
+best val auc : 0.8063132237091243 , saving at epoch 0
+best val auc : 0.8226239406045155 , saving at epoch 1
+best val auc : 0.831601960648358 , saving at epoch 2
+best val auc : 0.8410535551419016 , saving at epoch 3
+best val auc : 0.8413604531465847 , saving at epoch 4
+best val auc : 0.8434797774802789 , saving at epoch 5
+best val auc : 0.8456584119601682 , saving at epoch 6
+best val auc : 0.846540703721285 , saving at epoch 7
+best val auc : 0.8473227229330786 , saving at epoch 8
+best val auc : 0.8520245987764615 , saving at epoch 9
+best val auc : 0.8523661654817083 , saving at epoch 10
+best val auc : 0.8545204785347406 , saving at epoch 12
+best val auc : 0.8545953095914961 , saving at epoch 15
+best val auc : 0.854942956653457 , saving at epoch 16
+best val auc : 0.8569242995589074 , saving at epoch 17
+best val auc : 0.8587278720351595 , saving at epoch 18
+best val auc : 0.8587980094832229 , saving at epoch 22
+best val auc : 0.8594071118838973 , saving at epoch 25
+best val auc : 0.8624562507667116 , saving at epoch 26
+loading best val checkpoint
+########## stage 4 ####################################################################################################
+'Time 0 attn:'
+[]
+'Time 1 attn:'
+[]
+'Time 2 attn:'
+[]
+'Time 3 attn:'
+[]
+'Time 4 attn:'
+[]
+'Time 5 attn:'
+[]
+'Time 6 attn:'
+[]
+'Time 7 attn:'
+[[0.0333, 3, 1],
+ [0.0325, 1, 1],
+ [0.032, 7, 1],
+ [0.0318, 2, 1],
+ [0.0316, 0, 1],
+ [0.0314, 6, 1],
+ [0.0312, 2, 0],
+ [0.0312, 3, 2],
+ [0.0312, 1, 3],
+ [0.0312, 4, 0],
+ [0.0312, 0, 3],
+ [0.0312, 7, 2],
+ [0.0312, 3, 0],
+ [0.0312, 1, 0],
+ [0.0312, 2, 3],
+ [0.0312, 6, 2],
+ [0.0312, 6, 3],
+ [0.0312, 7, 0],
+ [0.0312, 3, 3],
+ [0.0312, 6, 0],
+ [0.0312, 0, 2],
+ [0.0312, 5, 0],
+ [0.0312, 4, 3],
+ [0.0312, 7, 3],
+ [0.0312, 4, 2],
+ [0.0312, 5, 3],
+ [0.0312, 1, 2],
+ [0.0312, 5, 2],
+ [0.0312, 0, 0],
+ [0.0312, 2, 2],
+ [0.0297, 4, 1],
+ [0.0287, 5, 1]]

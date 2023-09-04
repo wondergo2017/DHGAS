@@ -1,0 +1,1 @@
+python run_model.py --seed 33 --device 0 --model DHSpace --twin 12 --log_dir "../../logs/run/para/exp/Yelp/archs/0/33" --dhconfig "../../logs/run/para/exp/Yelp/archs/0" --dataset Yelp-nc --n_heads 2 --norm 1 --hlinear_act tanh --lr 0.01 --wd 0 > "../../logs/run/para/exp/Yelp/archs/0/33/log.txt"

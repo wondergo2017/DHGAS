@@ -1,0 +1,1 @@
+python run_model.py --seed 33 --device 2 --model DHSpace --twin 7 --log_dir "../../logs/run/para/exp/Ecomm/archs/0/33" --dhconfig "../../logs/run/para/exp/Ecomm/archs/0" --dataset Ecomm --n_heads 2 --norm 1 --hlinear_act tanh --lr 0.01 --wd 0 > "../../logs/run/para/exp/Ecomm/archs/0/33/log.txt"

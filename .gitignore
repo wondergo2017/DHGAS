@@ -1,0 +1,7 @@
+.ipynb_checkpoints/
+__pycache__/
+tmp/
+*.egg-info
+data/*
+test.py
+mlib/

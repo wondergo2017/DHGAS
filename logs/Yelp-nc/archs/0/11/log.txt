@@ -1,0 +1,35 @@
+split sizes: train 10018 ; val 1253 ; test 1253
+# time-dataset:  12
+Yelp Dataset(T=12,metadata=(['user', 'item'], [('user', 'review', 'item'), ('user', 'tip', 'item'), ('user', 'interact', 'item'), ('item', 'rev_review', 'user'), ('item', 'rev_tip', 'user'), ('item', 'rev_interact', 'user')]),dataset=HeteroData(
+  [1muser[0m={ x=[55702, 32] },
+  [1mitem[0m={
+    x=[12524, 32],
+    y=[12524]
+  },
+  [1m(user, review, item)[0m={
+    edge_index=[2, 87846],
+    edge_time=[87846]
+  },
+  [1m(user, tip, item)[0m={
+    edge_index=[2, 35508],
+    edge_time=[35508]
+  },
+  [1m(user, interact, item)[0m={
+    edge_index=[2, 123354],
+    edge_time=[123354]
+  },
+  [1m(item, rev_review, user)[0m={
+    edge_index=[2, 87846],
+    edge_time=[87846]
+  },
+  [1m(item, rev_tip, user)[0m={
+    edge_index=[2, 35508],
+    edge_time=[35508]
+  },
+  [1m(item, rev_interact, user)[0m={
+    edge_index=[2, 123354],
+    edge_time=[123354]
+  }
+),
+            )
+Final Test: 0.4301

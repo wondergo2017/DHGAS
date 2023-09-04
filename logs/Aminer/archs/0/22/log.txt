@@ -1,0 +1,28 @@
+CrossDomain Dataset(T=16,metadata=(['paper', 'author', 'venue'], [('paper', 'published', 'venue'), ('paper', 'written', 'author'), ('venue', 'rev_published', 'paper'), ('author', 'rev_written', 'paper')]),dataset=HeteroData(
+  [1mpaper[0m={
+    x=[18464, 32],
+    y=[18464],
+    time=[18464, 1],
+    num_nodes=18464
+  },
+  [1mauthor[0m={ x=[23035] },
+  [1mvenue[0m={ x=[22] },
+  [1m(paper, published, venue)[0m={
+    edge_index=[2, 18464],
+    edge_time=[18464, 1]
+  },
+  [1m(paper, written, author)[0m={
+    edge_index=[2, 52545],
+    edge_time=[52545, 1]
+  },
+  [1m(venue, rev_published, paper)[0m={
+    edge_index=[2, 18464],
+    edge_time=[18464, 1]
+  },
+  [1m(author, rev_written, paper)[0m={
+    edge_index=[2, 52545],
+    edge_time=[52545, 1]
+  }
+),
+            )
+Final Test: 0.8772
